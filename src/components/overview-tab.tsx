@@ -9,8 +9,12 @@ export function OverviewTab() {
                     Welcome to The Epoch
                 </h2>
                 <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                    A sci-fi roleplay universe where technology and humanity collide in the far reaches of space.
+                    A sci-fi ERP universe, where you explore the facilities of your new home, explore space, and of course, explore each other~
                 </p>
+            </div>
+
+            <div className="justify-center items-center flex transition-all duration-300 hover:shadow-lg hover:scale-[1.02] py-6">
+                <img className="rounded-lg" src={`${import.meta.env.BASE_URL}/Station.png`}/>
             </div>
 
             {/* Lore Cards */}
@@ -83,19 +87,19 @@ export function OverviewTab() {
                                     A crew has been sent to the planet out to investigate the mysteries of it's lifelessness.
                                 </p>
                             </div>
-                            <div className="space-y-2">
-                                <h4 className="font-semibold text-accent">Trade War Escalation</h4>
-                                <p className="text-sm text-muted-foreground">
-                                    Tensions between the Alliance and independent colonies have reached a breaking
-                                    point.
-                                </p>
-                            </div>
-                            <div className="space-y-2">
-                                <h4 className="font-semibold text-chart-3">AI Uprising Rumors</h4>
-                                <p className="text-sm text-muted-foreground">
-                                    Reports of rogue AI systems in the outer rim have sparked fear and investigation.
-                                </p>
-                            </div>
+                            {/*<div className="space-y-2">*/}
+                            {/*    <h4 className="font-semibold text-accent">Trade War Escalation</h4>*/}
+                            {/*    <p className="text-sm text-muted-foreground">*/}
+                            {/*        Tensions between the Alliance and independent colonies have reached a breaking*/}
+                            {/*        point.*/}
+                            {/*    </p>*/}
+                            {/*</div>*/}
+                            {/*<div className="space-y-2">*/}
+                            {/*    <h4 className="font-semibold text-chart-3">AI Uprising Rumors</h4>*/}
+                            {/*    <p className="text-sm text-muted-foreground">*/}
+                            {/*        Reports of rogue AI systems in the outer rim have sparked fear and investigation.*/}
+                            {/*    </p>*/}
+                            {/*</div>*/}
                         </div>
                     </CardContent>
                 </Card>

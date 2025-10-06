@@ -68,7 +68,7 @@ export function CharacterOverlay({ character, onClose }: CharacterOverlayProps) 
                         }`}
                     >
                         <img
-                            src={getCharacterImage(character) || "/placeholder.svg"}
+                            src={`${import.meta.env.BASE_URL}`+`${getCharacterImage(character) || "/placeholder.svg"}`}
                             alt={character.name}
 
                             className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-2xl"
