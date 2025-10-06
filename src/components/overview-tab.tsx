@@ -13,8 +13,8 @@ export function OverviewTab() {
                 </p>
             </div>
 
-            <div className="justify-center items-center flex transition-all duration-300 hover:shadow-lg hover:scale-[1.02] py-6">
-                <img className="rounded-lg" src={`${import.meta.env.BASE_URL}/Station.png`}/>
+            <div className="justify-center items-center flex ">
+                <img className="rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-[1.02]" src={`${import.meta.env.BASE_URL}/Station.png`}/>
             </div>
 
             {/* Lore Cards */}
