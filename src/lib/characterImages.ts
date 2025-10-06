@@ -9,7 +9,6 @@ export const getCharacterImage = (character: Character) => {
     }
 }
 
-
 export const mockCharacters: Character[] = [
     {
         id: "1",
@@ -109,7 +108,7 @@ export const mockCharacters: Character[] = [
         image: "/Valentine.png",
         bio: "Usually doesn’t mention his gender to anyone, being androgynous as hell it’s sometimes a surprise when he whips out his cocks.\n" +
             "His species is extremely long lived, easily reaching in the hundreds if not crossing into one thousand years.",
-        skills: ["Retractable Cocks", ""],
+        skills: ["Retractable Cocks", "Climbing up ceilings"],
         background:
             "Lizardboy",
     },
@@ -142,7 +141,7 @@ export const mockCharacters: Character[] = [
             "the head has a visor that covers her entire face. Her body seems to have a mind of its own at times, " +
             "as when the head is detached it is controlled by her subconscious and acts on her true feelings, regardless of what her head may say or want. " +
             "Sometimes her body may even detach the head against her own volition to act on her feelings when she is to shy or angry to do so",
-        skills: ["Retractable Cocks", ""],
+        skills: ["Retractable Claws", "Close Combat"],
         background:
             "Android",
     },
