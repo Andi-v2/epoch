@@ -4,18 +4,19 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Search } from "lucide-react"
 import { CharacterCard } from "@/components/character-card"
 import { CharacterOverlay } from "@/components/character-overlay"
-import {mockCharacters} from "@/lib/characterImages.ts";
+import {getCharacters} from "@/lib/characterData.ts";
+import type Character from "@/lib/interfaces.ts";
 
 // Mock character data - in a real app this would come from a database
 
 
-export function CharacterGallery() {
-    const [selectedCharacter, setSelectedCharacter] = useState<(typeof mockCharacters)[0] | null>(null)
+export function GalleryTab() {
+    const [selectedCharacter, setSelectedCharacter] = useState<(Character[])[0] | null>(null)
     const [searchTerm, setSearchTerm] = useState("")
     const [sortBy, setSortBy] = useState<"name" | "owner">("name")
 
     const filteredAndSortedCharacters = useMemo(() => {
-        const filtered = mockCharacters.filter((character) =>
+        const filtered = getCharacters().filter((character) =>
             character.name.toLowerCase().includes(searchTerm.toLowerCase()),
         )
 
@@ -33,7 +34,7 @@ export function CharacterGallery() {
             return { ungrouped: filteredAndSortedCharacters }
         }
 
-        const groups: Record<string, typeof mockCharacters> = {}
+        const groups: Record<string, Character[]> = {}
         filteredAndSortedCharacters.forEach((character) => {
             if (!groups[character.owner]) {
                 groups[character.owner] = []

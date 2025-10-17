@@ -3,7 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button.tsx"
 import { Moon, Sun } from "lucide-react"
 import { OverviewTab } from "@/components/overview-tab.tsx"
-import { CharacterGallery } from "@/components/character-gallery.tsx"
+import { GalleryTab } from "@/components/gallery-tab.tsx"
 
 
 export default function EpochHub() {
@@ -63,7 +63,7 @@ export default function EpochHub() {
                         </TabsContent>
 
                         <TabsContent value="characters" className="space-y-6">
-                            <CharacterGallery />
+                            <GalleryTab />
                         </TabsContent>
                     </Tabs>
                 </main>

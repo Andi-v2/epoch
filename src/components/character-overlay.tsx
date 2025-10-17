@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { getCharacterImage } from "@/lib/characterImages";
 import type Character from "@/lib/interfaces.ts";
 
 
@@ -67,7 +66,7 @@ export function CharacterOverlay({ character, onClose }: CharacterOverlayProps) 
                             }`}
                         >
                             <img
-                                src={`${import.meta.env.BASE_URL}`+`${getCharacterImage(character) || "/placeholder.svg"}`}
+                                src={`${import.meta.env.BASE_URL}`+`${"/"+character.image}`}
                                 alt={character.name}
                                 className="w-full h-auto max-h-[70vh] lg:max-h-[80vh] object-contain rounded-lg shadow-2xl"
                             />

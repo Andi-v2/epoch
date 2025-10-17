@@ -129,7 +129,7 @@
   }
 
   html {
-    overflow-y: scroll;
+    overflow-y: scroll; /*Scrollbar always visible*/
   }
 
   body[data-scroll-locked][data-scroll-locked] {
@@ -139,41 +139,4 @@
     margin-right: 0 !important;
   }
 
-  body {
-    @apply bg-background text-foreground;
-    background: linear-gradient(
-            -45deg,
-            oklch(0.95 0.01 240),
-            oklch(0.92 0.02 260),
-            oklch(0.94 0.015 280),
-            oklch(0.95 0.01 240)
-    );
-    background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
-
-  }
-
-  @keyframes gradientShift {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
-  :not(.dark) body {
-    background: linear-gradient(
-            -45deg,
-            oklch(0.95 0.01 240),
-            oklch(0.92 0.02 260),
-            oklch(0.94 0.015 280),
-            oklch(0.95 0.01 240)
-    );
-    background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
-  }
 }
