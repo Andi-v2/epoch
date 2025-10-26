@@ -1,12 +1,12 @@
 export default interface Character {
     id: string
     name: string
-    age: number
+    age: number | string
     owner: string
     faction: string
     role: string
     image: string
     bio: string
-    skills: string[]
-    background: string
+    characteristics: string[]
+    species: string
 }

@@ -106,13 +106,13 @@ export function CharacterOverlay({ character, onClose }: CharacterOverlayProps) 
 
                                 <div>
                                     <h3 className="text-base sm:text-lg font-semibold text-primary mb-2">Race</h3>
-                                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{character.background}</p>
+                                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{character.species}</p>
                                 </div>
 
                                 <div>
-                                    <h3 className="text-base sm:text-lg font-semibold text-primary mb-2">Skills</h3>
+                                    <h3 className="text-base sm:text-lg font-semibold text-primary mb-2">Characteristics</h3>
                                     <div className="flex flex-wrap gap-2">
-                                        {character.skills.map((skill, index) => (
+                                        {character.characteristics.map((skill, index) => (
                                             <Badge key={index} variant="outline" className="text-xs">
                                                 {skill}
                                             </Badge>

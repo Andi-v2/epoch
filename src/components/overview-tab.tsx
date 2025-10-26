@@ -9,7 +9,7 @@ export function OverviewTab() {
                     Welcome to The Epoch
                 </h2>
                 <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                    A sci-fi ERP universe, where you explore the facilities of your new home, explore space, and of course, explore each other~
+                    A sci-fi ERP universe, where you explore the facilities of your new home, explore space, and of course, explore each other
                 </p>
             </div>
 
@@ -22,7 +22,7 @@ export function OverviewTab() {
                 <Card className="transition-all duration-300 hover:shadow-lg hover:scale-[1.02] py-6">
                     <CardHeader>
                         <CardTitle className="text-primary ">The Setting</CardTitle>
-                        <CardDescription>Year 2477 - The Epoch Space Station</CardDescription>
+                        <CardDescription>Year 2497 - The Epoch Space Station</CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-4">
                         <p className="text-sm leading-relaxed">

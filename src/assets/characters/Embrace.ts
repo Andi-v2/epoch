@@ -10,8 +10,8 @@ export const characters: Character[] = [
         role: "Chemist & Mechanic",
         image: "Astra.png",
         bio: "An old experiment of hers has left her body nigh indestructible and incredibly stretchy, she can take cock almost any size, despite her small stature.",
-        skills: ["Mechanical Engineering", "Chemical Engineering"],
-        background: "Furry Kobold",
+        characteristics: ["Mechanical Engineering", "Chemical Engineering"],
+        species: "Furry Kobold",
     },
     {
         id: "b3fe7ae5-7948-4526-ad18-7759539b706e",
@@ -23,8 +23,8 @@ export const characters: Character[] = [
         image: "Valentine.png",
         bio: "Usually doesn’t mention his gender to anyone, being androgynous as hell it’s sometimes a surprise when he whips out his cocks.\n" +
             "His species is extremely long lived, easily reaching in the hundreds if not crossing into one thousand years.",
-        skills: ["Retractable Cocks", "Climbing up ceilings"],
-        background:
+        characteristics: ["Retractable Cocks", "Climbing up ceilings"],
+        species:
             "Lizardboy",
     },
 
