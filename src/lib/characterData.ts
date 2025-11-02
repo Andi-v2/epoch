@@ -18,6 +18,10 @@ export function getCharacters(): Character[] {
     return allCharacters;
 }
 
+export function getCharacterImage(character: Character) {
+    return `${import.meta.env.BASE_URL}`+`${"/"+ character.owner+"/"+character.image}`
+}
+
 
 /*
 export const mockCharacters: Character[] = [

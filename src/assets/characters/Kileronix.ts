@@ -48,6 +48,20 @@ export const characters: Character[] = [
         characteristics: ["Retractable Claws", "Close Combat"],
         species:
             "Android",
+    },
+    {
+        id: "e0e05925-e423-4518-8d47-6ede82b6b1fd",
+        name: "Blair",
+        age: 28,
+        owner: "Kileronix",
+        faction: "The Federation",
+        role: "Onboard AI",
+        image: "Blair.png",
+        bio: "She applied on herself a couple of her body marks and runes, mainly, on her hands and forearms to help her canalize mana and energy, " +
+            "as a way to apply those marks easier... and one down her dick and balls, looking for some special effects down there for their partners, " +
+            "so they have some special fun, her tail also serves as an tattoo tool, say for ink tattoos, or the magic ones.",
+        characteristics: ["Magic"],
+        species: "Demon",
     }
 
 

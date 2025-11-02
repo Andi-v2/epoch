@@ -24,8 +24,56 @@ export const characters: Character[] = [
         bio: "Usually doesn’t mention his gender to anyone, being androgynous as hell it’s sometimes a surprise when he whips out his cocks.\n" +
             "His species is extremely long lived, easily reaching in the hundreds if not crossing into one thousand years.",
         characteristics: ["Retractable Cocks", "Climbing up ceilings"],
-        species:
-            "Lizardboy",
+        species: "Lizardboy",
     },
+    {
+        id: "51c42698-7764-4d31-86d2-5680cd986590",
+        name: "Octavia",
+        age: "Unknown",
+        owner: "Embrace",
+        faction: "The Federation",
+        role: "Yes",
+        image: "Octavia.png",
+        bio: "-",
+        characteristics: [""],
+        species: "Scyla",
+    },
+    {
+        id: "494be0bf-6494-4711-a2af-a68c8bbb17e0",
+        name: "Snowy",
+        age: 21,
+        owner: "Embrace",
+        faction: "The Federation",
+        role: "Systems Operator",
+        image: "Snowy.png",
+        bio: "-",
+        characteristics: [""],
+        species: "Dragonborn",
+    },
+    {
+        id: "f6ee83d1-d351-46c3-99b6-7b0708c6ee6d",
+        name: "Felicia",
+        age: 40,
+        owner: "Embrace",
+        faction: "The Federation",
+        role: "Corp. Chief Executive",
+        image: "Felicia.png",
+        bio: "-",
+        characteristics: [""],
+        species: "Tabaxi",
+    },
+    {
+        id: "3d30a7ca-7418-4caa-97f1-24468fb780a0",
+        name: "Justice",
+        age: "Unknown",
+        owner: "Embrace",
+        faction: "The Federation",
+        role: "Trainer",
+        image: "Justice.jpg",
+        bio: "Managed to defeat and seal Beelzebub a couple months back (aka satan). While this feat was impressive and saved countless lives, " +
+            "it came at the cost of her eyesight. It took her weeks to stop making “Justice is blind” jokes.",
+        characteristics: ["Strength", "Physical Combat"],
+        species: "Demon",
+    }
 
 ]

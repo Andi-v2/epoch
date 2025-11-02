@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import type Character from "@/lib/interfaces.ts";
+import {getCharacterImage} from "@/lib/characterData.ts";
 
 interface CharacterCardProps {
     character: Character
@@ -21,7 +22,7 @@ export function CharacterCard({ character, onClick }: CharacterCardProps) {
             <CardContent className="p-0 relative">
                 <div className="aspect-[3/4] relative overflow-hidden">
                     <img
-                        src={`${import.meta.env.BASE_URL}`+`${"/"+character.image}`}
+                        src={getCharacterImage(character)}
                         alt={character.name}
                         className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />

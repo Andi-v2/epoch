@@ -3,6 +3,7 @@ import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import type Character from "@/lib/interfaces.ts";
+import {getCharacterImage} from "@/lib/characterData.ts";
 
 
 interface CharacterOverlayProps {
@@ -66,7 +67,7 @@ export function CharacterOverlay({ character, onClose }: CharacterOverlayProps) 
                             }`}
                         >
                             <img
-                                src={`${import.meta.env.BASE_URL}`+`${"/"+character.image}`}
+                                src={getCharacterImage(character)}
                                 alt={character.name}
                                 className="w-full h-auto max-h-[70vh] lg:max-h-[80vh] object-contain rounded-lg shadow-2xl"
                             />
