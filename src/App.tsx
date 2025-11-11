@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button.tsx"
 import { Moon, Sun } from "lucide-react"
 import { OverviewTab } from "@/components/overview-tab.tsx"
 import { GalleryTab } from "@/components/gallery-tab.tsx"
+import {CreatorTab} from "@/components/creator-tab.tsx";
 
 
 export default function EpochHub() {
@@ -39,7 +40,7 @@ export default function EpochHub() {
                             variant="outline"
                             size="icon"
                             onClick={toggleTheme}
-                            className="transition-all duration-200 hover:scale-105 bg-transparent"
+                            className="transition-all duration-200 bg-transparent text-foreground hover:text-secondary"
                         >
                             {isDarkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
                         </Button>
@@ -49,12 +50,15 @@ export default function EpochHub() {
                 {/* Main Content */}
                 <main className="flex-1 container mx-auto px-4 py-8">
                     <Tabs defaultValue="overview" className="w-full">
-                        <TabsList className="grid w-full grid-cols-2 mb-8">
+                        <TabsList className="grid w-full grid-cols-3 mb-8">
                             <TabsTrigger value="overview" className="transition-all duration-200">
                                 Overview & Lore
                             </TabsTrigger>
                             <TabsTrigger value="characters" className="transition-all duration-200">
                                 Character Gallery
+                            </TabsTrigger>
+                            <TabsTrigger value="creator" className="transition-all duration-200">
+                                Create Character
                             </TabsTrigger>
                         </TabsList>
 
@@ -64,6 +68,10 @@ export default function EpochHub() {
 
                         <TabsContent value="characters" className="space-y-6">
                             <GalleryTab />
+                        </TabsContent>
+
+                        <TabsContent value="creator" className="space-y-6">
+                            <CreatorTab/>
                         </TabsContent>
                     </Tabs>
                 </main>

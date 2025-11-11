@@ -131,16 +131,15 @@ export const characters: Character[] = [
 
 ]
 
-
-    // {
-    //     id: "",
-    //     name: "",
-    //     age: ,
-    //     owner: "",
-    //     faction: "",
-    //     role: "",
-    //     image: "",
-    //     bio: "",
-    //     skills: [""],
-    //     background: ""
-    // }
+// {
+//     id: "",
+//     name: "",
+//     age: 0,
+//     owner: "",
+//     faction: "",
+//     role: "",
+//     image: "",
+//     bio: "",
+//     characteristics: [""],
+//     species: ""
+// }

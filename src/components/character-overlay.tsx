@@ -129,7 +129,7 @@ export function CharacterOverlay({ character, onClose }: CharacterOverlayProps) 
                 <Button
                     variant="outline"
                     size="icon"
-                    className={`fixed top-4 right-4 z-20 bg-background/80 backdrop-blur-sm transition-all duration-500 ease-out delay-200 ${
+                    className={`fixed top-4 right-4 z-20 bg-background/80 backdrop-blur-sm transition-all duration-200 ease-out hover:text-primary ${
                         isVisible ? "opacity-100 scale-100" : "opacity-0 scale-75"
                     }`}
                     onClick={handleClose}

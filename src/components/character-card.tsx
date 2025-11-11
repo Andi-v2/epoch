@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card.tsx"
 import type Character from "@/lib/interfaces.ts";
 import {getCharacterImage} from "@/lib/characterData.ts";
 

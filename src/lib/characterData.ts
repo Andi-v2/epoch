@@ -5,7 +5,7 @@ import type Character from "@/lib/interfaces.ts";
 export function getCharacters(): Character[] {
     const characterModules = import.meta.glob<{ characters: Character[] }>(
         '/src/assets/characters/*.ts',
-        { eager: true, import: 'characters' }
+        {eager: true, import: 'characters'}
     );
 
     const allCharacters: Character[] = [];
@@ -19,9 +19,35 @@ export function getCharacters(): Character[] {
 }
 
 export function getCharacterImage(character: Character) {
-    return `${import.meta.env.BASE_URL}`+`${"/"+ character.owner+"/"+character.image}`
+    return `${import.meta.env.BASE_URL}` + `${"/" + character.owner + "/" + character.image}`
 }
 
+
+export const Owners: string[] =
+    [
+        "Andi",
+        "Azi",
+        "Bacon",
+        "Bred",
+        "Coyote",
+        "Cyber",
+        "Cyphel",
+        "Dot",
+        "Eclipse",
+        "Embrace",
+        "Eyelander",
+        "Foxi",
+        "Henest",
+        "Kathy",
+        "Kileronix",
+        "Null",
+        "Pohare",
+        "Shadowsando",
+        "Svartrbrisingr",
+        "Vampy",
+        "Void",
+        "Wren",
+    ]
 
 /*
 export const mockCharacters: Character[] = [
