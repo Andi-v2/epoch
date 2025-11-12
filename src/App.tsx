@@ -40,7 +40,7 @@ export default function EpochHub() {
                             variant="outline"
                             size="icon"
                             onClick={toggleTheme}
-                            className="transition-all duration-200 bg-transparent text-foreground hover:text-secondary"
+                            className="transition-all duration-200 bg-transparent text-foreground hover:text-primary"
                         >
                             {isDarkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
                         </Button>

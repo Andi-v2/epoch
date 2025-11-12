@@ -10,7 +10,6 @@ import {Popover, PopoverContent, PopoverTrigger} from "@/components/ui/popover.t
 import {Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList} from "@/components/ui/command.tsx";
 import {Owners} from "@/lib/characterData.ts";
 import {cn} from "@/lib/utils.ts";
-import {ScrollArea} from "@/components/ui/scroll-area.tsx";
 
 export function CreatorTab() {
     const [name, setName] = useState("")
